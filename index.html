@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repo Picks — For You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Repo Picks</h1>
+    <p class="subtitle">Discover repositories that fit who you are</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <form id="search-form">
+        <input
+          type="text"
+          id="interests-input"
+          placeholder="Your interests (e.g. Python, iOS, machine learning)"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+        />
+        <button type="submit">Find Repos</button>
+      </form>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="discover">Discover</button>
+      <button class="tab" data-tab="bookmarks">Bookmarks <span id="bookmark-count"></span></button>
+    </nav>
+
+    <section id="discover" class="tab-content active">
+      <div id="discover-state" class="empty-state">
+        <p>Enter your interests above to get personalized repo recommendations.</p>
+      </div>
+      <div id="results" class="repo-list" hidden></div>
+    </section>
+
+    <section id="bookmarks" class="tab-content" hidden>
+      <div id="bookmarks-state" class="empty-state">
+        <p>No bookmarks yet. Bookmark repos from Discover to save them here.</p>
+      </div>
+      <div id="bookmarks-list" class="repo-list" hidden></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
