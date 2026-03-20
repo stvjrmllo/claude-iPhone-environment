@@ -3,49 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Repo Picks — For You</title>
+  <title>HandyPro — Reliable Handyman Services</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Repo Picks</h1>
-    <p class="subtitle">Discover repositories that fit who you are</p>
+    <nav class="nav-bar">
+      <a href="#" class="logo">HandyPro</a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="search-section">
-      <form id="search-form">
-        <input
-          type="text"
-          id="interests-input"
-          placeholder="Your interests (e.g. Python, iOS, machine learning)"
-          autocomplete="off"
-          autocorrect="off"
-          spellcheck="false"
-        />
-        <button type="submit">Find Repos</button>
-      </form>
-    </section>
-
-    <nav class="tabs">
-      <button class="tab active" data-tab="discover">Discover</button>
-      <button class="tab" data-tab="bookmarks">Bookmarks <span id="bookmark-count"></span></button>
-    </nav>
-
-    <section id="discover" class="tab-content active">
-      <div id="discover-state" class="empty-state">
-        <p>Enter your interests above to get personalized repo recommendations.</p>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Your Trusted Local Handyman</h1>
+      <p>Quality repairs, installations, and maintenance for your home. No job too small.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:+15551234567" class="btn btn-secondary">Call (555) 123-4567</a>
       </div>
-      <div id="results" class="repo-list" hidden></div>
-    </section>
+    </div>
+  </section>
 
-    <section id="bookmarks" class="tab-content" hidden>
-      <div id="bookmarks-state" class="empty-state">
-        <p>No bookmarks yet. Bookmark repos from Discover to save them here.</p>
+  <section class="services" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Professional solutions for every corner of your home</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">&#128295;</div>
+        <h3>General Repairs</h3>
+        <p>Door fixes, drywall patching, furniture assembly, and all those small jobs around the house.</p>
       </div>
-      <div id="bookmarks-list" class="repo-list" hidden></div>
-    </section>
-  </main>
+      <div class="service-card">
+        <div class="service-icon">&#128161;</div>
+        <h3>Electrical</h3>
+        <p>Light fixture installation, outlet repairs, ceiling fan mounting, and smart home setup.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#128688;</div>
+        <h3>Plumbing</h3>
+        <p>Faucet replacement, leak repairs, toilet fixes, and garbage disposal installation.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#127912;</div>
+        <h3>Painting</h3>
+        <p>Interior and exterior painting, touch-ups, staining, and accent walls.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#129692;</div>
+        <h3>Carpentry</h3>
+        <p>Shelving, trim work, deck repairs, cabinet fixes, and custom woodwork.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#127968;</div>
+        <h3>Exterior</h3>
+        <p>Gutter cleaning, pressure washing, fence repairs, and weatherproofing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="section-title">Why Choose HandyPro?</h2>
+      <div class="about-features">
+        <div class="feature">
+          <span class="feature-check">&#10003;</span>
+          <div>
+            <h4>Years of Hands-On Experience</h4>
+            <p>Self-taught craftsman with real-world skills built through years of dedicated practice.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-check">&#10003;</span>
+          <div>
+            <h4>Upfront Pricing</h4>
+            <p>No hidden fees. Get a clear quote before any work begins.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-check">&#10003;</span>
+          <div>
+            <h4>Satisfaction Guaranteed</h4>
+            <p>We stand behind our work with a 100% satisfaction guarantee.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-check">&#10003;</span>
+          <div>
+            <h4>Same-Day Service</h4>
+            <p>Need it done fast? We offer same-day and next-day appointments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Fixed our leaky kitchen faucet and installed new shelves in under two hours. Professional, clean, and affordable. Highly recommend!"</p>
+        <span class="testimonial-author">— Sarah M.</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"We had a long list of small repairs we'd been putting off. HandyPro knocked them all out in one visit. Will definitely call again."</p>
+        <span class="testimonial-author">— James R.</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"On time, fair price, and great quality work on our deck repair. These guys are the real deal."</p>
+        <span class="testimonial-author">— Linda K.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get Your Free Quote</h2>
+    <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours</p>
+    <form id="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" />
+      </div>
+      <div class="form-group">
+        <label for="service">Service Needed</label>
+        <select id="service" name="service">
+          <option value="">Select a service...</option>
+          <option value="general">General Repairs</option>
+          <option value="electrical">Electrical</option>
+          <option value="plumbing">Plumbing</option>
+          <option value="painting">Painting</option>
+          <option value="carpentry">Carpentry</option>
+          <option value="exterior">Exterior</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Describe Your Project</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us what you need help with..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+    </form>
+    <div id="form-success" class="form-success" hidden>
+      <p>Thanks! We'll be in touch within 24 hours.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>HandyPro</h3>
+        <p>Serving the greater metro area with quality handyman services since 2015.</p>
+      </div>
+      <div class="footer-contact">
+        <p>&#9742; (555) 123-4567</p>
+        <p>&#9993; info@handypro.com</p>
+        <p>Mon–Sat: 7am – 6pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 HandyPro. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
